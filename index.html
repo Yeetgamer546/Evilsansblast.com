@@ -5,38 +5,31 @@
     <title>Evil Sans Blast - Official Site</title>
     <style>
         body {
-            background-color: black;
-            color: lime;
+            background-color: #000000;
+            color: #00FF00;
             font-family: 'Comic Sans MS', cursive, sans-serif;
             text-align: center;
         }
-        .marquee {
-            color: red;
-            font-size: 24px;
-            text-decoration: blink;
-            background-color: yellow;
-            font-weight: bold;
-            animation: blink 1s infinite;
-        }
-        @keyframes blink {
-            0% { opacity: 1; }
-            50% { opacity: 0; }
-            100% { opacity: 1; }
-        }
         a {
-            color: cyan;
-            text-decoration: none;
-        }
-        a:hover {
-            color: white;
+            color: #00FFFF;
             text-decoration: underline;
         }
+        a:hover {
+            color: #FFFFFF;
+        }
         .header {
-            background-color: blue;
-            padding: 10px;
+            background-color: #0000FF;
+            padding: 15px;
+            font-size: 24px;
         }
         .content {
             padding: 20px;
+            text-align: left;
+            margin: 0 auto;
+            width: 80%;
+        }
+        .content h2 {
+            color: #FF00FF;
         }
         .download-link {
             font-size: 20px;
@@ -47,10 +40,11 @@
             text-transform: uppercase;
         }
         .testimonials {
-            background-color: purple;
+            background-color: #800080;
             color: yellow;
-            padding: 10px;
+            padding: 15px;
             font-size: 16px;
+            border-radius: 5px;
         }
         .social-links a {
             font-size: 20px;
@@ -58,24 +52,24 @@
         }
         .footer {
             background-color: gray;
-            padding: 10px;
+            padding: 20px;
             color: white;
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1 class="marquee">WELCOME TO EVIL SANS BLAST!</h1>
-        <!-- Navigation Links with "About Us" -->
-        <a href="index.html">Home</a> |
+        <h1>Welcome to Evil Sans Blast!</h1>
+        <!-- Updated Navigation with clear structure -->
+        <a href="index.html">Home</a> | 
+        <a href="download.html">Download</a> | 
         <a href="about.html">About Us</a> | 
         <a href="faq.html">FAQ</a>
     </div>
     <div class="content">
         <h2>About the Game</h2>
         <p>
-            Evil Sans Blast is the most EPIC game you'll ever play! Battle your way through hordes of enemies, 
-            collect power-ups, and defeat the ultimate boss: EVIL SANS!
+            Evil Sans Blast is the most EPIC game you'll ever play! Battle through hordes of enemies, collect power-ups, and defeat the ultimate boss: EVIL SANS!
         </p>
         <img src="cropped.png" alt="Evil Sans" width="400" height="200" />
         
@@ -95,7 +89,7 @@
             <li>Customizable characters and skins.</li>
         </ul>
 
-        <!-- Testimonials Section -->
+        <!-- Testimonials Section with refined style -->
         <div class="testimonials">
             <h3>What People Are Saying</h3>
             <p>"This game is incredible! I can't stop playing!" - GamerX</p>

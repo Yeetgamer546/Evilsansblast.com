@@ -5,80 +5,87 @@
     <title>Evil Sans Blast - Official Site</title>
     <style>
         body {
-            background-color: #000000;
-            color: #00FF00;
+            background-color: black;
+            color: lime;
             font-family: 'Comic Sans MS', cursive, sans-serif;
             text-align: center;
+            background-image: url('background.jpg'); /* Replace with your background image */
+            background-repeat: repeat-x; /* Repeat horizontally for a moving effect */
+            animation: moveBackground 30s linear infinite; /* Animation for movement */
         }
+        
+        @keyframes moveBackground {
+            from {
+                background-position: 0 0; /* Start point */
+            }
+            to {
+                background-position: 100% 0; /* End point */
+            }
+        }
+
+        .marquee {
+            color: red;
+            font-size: 24px;
+            text-decoration: blink;
+            background-color: yellow;
+            font-weight: bold;
+            animation: blink 1s infinite;
+        }
+
         a {
-            color: #00FFFF;
+            color: cyan;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: white;
             text-decoration: underline;
         }
-        a:hover {
-            color: #FFFFFF;
-        }
+
         .header {
-            background-color: #0000FF;
-            padding: 15px;
-            font-size: 24px;
+            background-color: blue;
+            padding: 10px;
         }
+
         .content {
             padding: 20px;
-            text-align: left;
-            margin: 0 auto;
-            width: 80%;
+            background: rgba(0, 0, 0, 0.8); /* Improves readability on a moving background */
         }
-        .content h2 {
-            color: #FF00FF;
-        }
-        .download-link {
-            font-size: 20px;
-            background-color: orange;
-            color: black;
-            padding: 10px;
-            border: 3px solid red;
-            text-transform: uppercase;
-        }
+
         .testimonials {
-            background-color: #800080;
+            background-color: purple;
             color: yellow;
-            padding: 15px;
+            padding: 10px;
             font-size: 16px;
-            border-radius: 5px;
         }
+
         .social-links a {
             font-size: 20px;
             margin: 10px;
         }
+
         .footer {
             background-color: gray;
-            padding: 20px;
+            padding: 10px;
             color: white;
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>Welcome to Evil Sans Blast!</h1>
-        <!-- Updated Navigation with clear structure -->
+        <h1 class="marquee">WELCOME TO EVIL SANS BLAST!</h1>
+        <!-- Updated Navigation without Download Page -->
         <a href="index.html">Home</a> | 
-        <a href="download.html">Download</a> | 
         <a href="about.html">About Us</a> | 
         <a href="faq.html">FAQ</a>
     </div>
     <div class="content">
         <h2>About the Game</h2>
         <p>
-            Evil Sans Blast is the most EPIC game you'll ever play! Battle through hordes of enemies, collect power-ups, and defeat the ultimate boss: EVIL SANS!
+            Evil Sans Blast is the most EPIC game you'll ever play! Battle through hordes of enemies, 
+            collect power-ups, and defeat the ultimate boss: EVIL SANS!
         </p>
         <img src="cropped.png" alt="Evil Sans" width="400" height="200" />
-        
-        <!-- Download Section -->
-        <h2>Download Now!</h2>
-        <p>
-            Get your copy of Evil Sans Blast today! Click below to download:
-        </p>
-        <a href="https://gamebanana.com/dl/1127589" class="download-link">Download Now!</a>
 
         <!-- Features Section -->
         <h2>Game Features</h2>
@@ -89,7 +96,7 @@
             <li>Customizable characters and skins.</li>
         </ul>
 
-        <!-- Testimonials Section with refined style -->
+        <!-- Testimonials Section -->
         <div class="testimonials">
             <h3>What People Are Saying</h3>
             <p>"This game is incredible! I can't stop playing!" - GamerX</p>

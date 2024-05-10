@@ -7,7 +7,7 @@
         body {
             background-color: black;
             color: lime;
-            font-family: Arial, sans-serif; /* Default font for desktop */
+            font-family: Arial, sans-serif; /* Changed to improve cross-device readability */
             text-align: center;
             background-image: url('background.jpg'); /* Background image */
             background-repeat: repeat-x; /* Horizontal repetition */
@@ -16,11 +16,30 @@
 
         @keyframes moveBackground {
             from {
-                background-position: 0 0; /* Starting point */
+                background-position: 0 0; /* Starting position */
             }
             to {
                 background-position: 100% 0; /* End point after animation */
             }
+        }
+
+        .marquee {
+            color: red;
+            font-size: 24px;
+            text-decoration: blink; /* Deprecated in most browsers */
+            background-color: yellow;
+            font-weight: bold;
+            animation: blink 1s infinite; /* Mimics blink effect */
+        }
+
+        a {
+            color: cyan;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: white;
+            text-decoration: underline;
         }
 
         .header {
@@ -30,44 +49,73 @@
 
         .content {
             padding: 20px;
-            background: rgba(0, 0, 0, 0.8); /* Improves readability */
+            background: rgba(0, 0, 0, 0.8); /* Improves readability on a moving background */
         }
 
-        /* Styles for Latest News Section */
-        .latest-news {
-            background-color: darkgreen; /* Unique background for news section */
-            padding: 20px;
-            border: 3px solid lime;
-            text-align: left;
-            width: 80%;
-            margin: 0 auto;
-        }
-
-        .news-item {
-            background-color: black; /* Each news item gets a card-like background */
+        .download-link {
+            font-size: 20px;
+            background-color: orange;
+            color: black;
             padding: 10px;
-            border: 2px solid lime;
-            margin-bottom: 10px;
+            border: 3px solid red;
+            text-transform: uppercase;
+            text-decoration: none;
         }
 
-        .news-item h3 {
-            color: yellow; /* Standout color for news headlines */
+        .testimonials {
+            background-color: purple;
+            color: yellow;
+            padding: 10px;
+            font-size: 16px.
         }
 
-        .news-item p {
-            color: white;
+        .social-links a {
+            font-size: 20px;
+            margin: 10px;
         }
 
         .footer {
             background-color: gray;
             padding: 10px;
-            color: white;
+            color: white.
         }
+
+        /* Styles for Latest News Section */
+        .latest-news {
+            background-color: darkgreen; /* Distinct background for news section */
+            padding: 15px;
+            border: 2px solid lime; /* Outline for differentiation */
+            text-align: left; /* Left alignment for readability */
+            width: 80%;
+            margin: 20px auto; /* Centers the news section */
+        }
+
+        .latest-news h2 {
+            color: yellow; /* Make section heading stand out */
+            font-size: 28px; /* Slightly larger for emphasis */
+        }
+
+        .latest-news .news-item {
+            background-color: black; /* Card-like background */
+            padding: 10px;
+            border: 1px solid lime; /* Outline for individual news items */
+            margin-bottom: 10px;
+        }
+
+        .latest-news .news-item h3 {
+            color: yellow; /* Headings in yellow */
+            font-size: 20px; /* Larger font for news item headings */
+        }
+
+        .latest-news .news-item p {
+            color: white; /* Maintain readability */
+        }
+
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>WELCOME TO EVIL SANS BLAST!</h1>
+        <h1 class="marquee">WELCOME TO EVIL SANS BLAST!</h1>
         <!-- Navigation Links -->
         <a href="index.html">Home</a> | 
         <a href="about.html">About Us</a> | 
@@ -77,11 +125,24 @@
     <div class="content">
         <h2>About the Game</h2>
         <p>
-            Evil Sans Blast is the most EPIC game you'll ever play! Battle through hordes of enemies, 
-            collect power-ups, and defeat the ultimate boss: EVIL SANS!
+            Evil Sans Blast is the most EPIC game you'll ever play! Battle through hordes of enemies, collect power-ups, and defeat the ultimate boss: EVIL SANS!
         </p>
+        <img src="cropped.png" alt="Evil Sans" width="400" height="200" />
 
-        <!-- Improved Latest News Section -->
+        <!-- Direct Download Button -->
+        <h2>Download Now!</h2>
+        <a href="https://gamebanana.com/dl/1127589" class="download-link">Download Now!</a>
+
+        <!-- Features Section -->
+        <h2>Game Features</h2>
+        <ul>
+            <li>Epic battles with unique bosses.</li>
+            <li>Unlockable power-ups and special abilities.</li>
+            <li>Multiple levels with increasing difficulty.</li>
+            <li>Customizable characters and skins.</li>
+        </ul>
+
+        <!-- Redesigned Latest News Section -->
         <div class="latest-news">
             <h2>Latest News</h2>
             <!-- News Item 1 -->
@@ -102,19 +163,6 @@
                 <p>Sign up for our next tournament and compete with players worldwide. Prizes await the winners!</p>
             </div>
         </div>
-
-        <!-- Direct Download Button -->
-        <h2>Download Now!</h2>
-        <a href="https://gamebanana.com/dl/1127589" class="download-link">Download Now!</a>
-
-        <!-- Features Section -->
-        <h2>Game Features</h2>
-        <ul>
-            <li>Epic battles with unique bosses.</li>
-            <li>Unlockable power-ups and special abilities.</li>
-            <li>Multiple levels with increasing difficulty.</li>
-            <li>Customizable characters and skins.</li>
-        </ul>
 
         <!-- Testimonials Section -->
         <div class="testimonials">

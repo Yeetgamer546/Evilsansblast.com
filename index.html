@@ -9,17 +9,17 @@
             color: lime;
             font-family: 'Comic Sans MS', cursive, sans-serif;
             text-align: center;
-            background-image: url('background.jpg'); /* Replace with your background image */
-            background-repeat: repeat-x; /* Repeat horizontally for a moving effect */
-            animation: moveBackground 30s linear infinite; /* Animation for movement */
+            background-image: url('background.jpg'); /* Your background image */
+            background-repeat: repeat-x; /* Horizontal repetition */
+            animation: moveBackground 30s linear infinite; /* Animation for background movement */
         }
-        
+
         @keyframes moveBackground {
             from {
-                background-position: 0 0; /* Start point */
+                background-position: 0 0; /* Starting point */
             }
             to {
-                background-position: 100% 0; /* End point */
+                background-position: 100% 0; /* End point after animation */
             }
         }
 
@@ -36,7 +36,7 @@
             color: cyan;
             text-decoration: none;
         }
-        
+
         a:hover {
             color: white;
             text-decoration: underline;
@@ -50,6 +50,16 @@
         .content {
             padding: 20px;
             background: rgba(0, 0, 0, 0.8); /* Improves readability on a moving background */
+        }
+
+        .download-link {
+            font-size: 20px;
+            background-color: orange;
+            color: black;
+            padding: 10px;
+            border: 3px solid red;
+            text-transform: uppercase;
+            text-decoration: none; /* Ensures text doesn't have underline */
         }
 
         .testimonials {
@@ -74,11 +84,12 @@
 <body>
     <div class="header">
         <h1 class="marquee">WELCOME TO EVIL SANS BLAST!</h1>
-        <!-- Updated Navigation without Download Page -->
+        <!-- Updated Navigation -->
         <a href="index.html">Home</a> | 
         <a href="about.html">About Us</a> | 
         <a href="faq.html">FAQ</a>
     </div>
+
     <div class="content">
         <h2>About the Game</h2>
         <p>
@@ -86,6 +97,10 @@
             collect power-ups, and defeat the ultimate boss: EVIL SANS!
         </p>
         <img src="cropped.png" alt="Evil Sans" width="400" height="200" />
+
+        <!-- Direct Download Button -->
+        <h2>Download Now!</h2>
+        <a href="https://gamebanana.com/dl/1127589" class="download-link">Download Now!</a> <!-- Direct download link -->
 
         <!-- Features Section -->
         <h2>Game Features</h2>

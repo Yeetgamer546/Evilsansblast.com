@@ -7,7 +7,7 @@
         body {
             background-color: black;
             color: lime;
-            font-family: Arial, sans-serif; /* Reliable font for cross-device consistency */
+            font-family: Arial, sans-serif; /* Default font for desktop */
             text-align: center;
             background-image: url('background.jpg'); /* Background image */
             background-repeat: repeat-x; /* Horizontal repetition */
@@ -16,30 +16,11 @@
 
         @keyframes moveBackground {
             from {
-                background-position: 0 0; /* Starting position */
+                background-position: 0 0; /* Starting point */
             }
             to {
                 background-position: 100% 0; /* End point after animation */
             }
-        }
-
-        .marquee {
-            color: red;
-            font-size: 24px;
-            text-decoration: blink; /* Blink effect (no longer supported in most browsers) */
-            background-color: yellow;
-            font-weight: bold;
-            animation: blink 1s infinite; /* Mimics blinking text */
-        }
-
-        a {
-            color: cyan;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: white;
-            text-decoration: underline;
         }
 
         .header {
@@ -52,26 +33,29 @@
             background: rgba(0, 0, 0, 0.8); /* Improves readability */
         }
 
-        .download-link {
-            font-size: 20px;
-            background-color: orange;
-            color: black;
-            padding: 10px;
-            border: 3px solid red;
-            text-transform: uppercase;
-            text-decoration: none;
+        /* Styles for Latest News Section */
+        .latest-news {
+            background-color: darkgreen; /* Unique background for news section */
+            padding: 20px;
+            border: 3px solid lime;
+            text-align: left;
+            width: 80%;
+            margin: 0 auto;
         }
 
-        .testimonials {
-            background-color: purple;
-            color: yellow;
+        .news-item {
+            background-color: black; /* Each news item gets a card-like background */
             padding: 10px;
-            font-size: 16px;
+            border: 2px solid lime;
+            margin-bottom: 10px;
         }
 
-        .social-links a {
-            font-size: 20px;
-            margin: 10px;
+        .news-item h3 {
+            color: yellow; /* Standout color for news headlines */
+        }
+
+        .news-item p {
+            color: white;
         }
 
         .footer {
@@ -83,7 +67,7 @@
 </head>
 <body>
     <div class="header">
-        <h1 class="marquee">WELCOME TO EVIL SANS BLAST!</h1>
+        <h1>WELCOME TO EVIL SANS BLAST!</h1>
         <!-- Navigation Links -->
         <a href="index.html">Home</a> | 
         <a href="about.html">About Us</a> | 
@@ -96,7 +80,28 @@
             Evil Sans Blast is the most EPIC game you'll ever play! Battle through hordes of enemies, 
             collect power-ups, and defeat the ultimate boss: EVIL SANS!
         </p>
-        <img src="cropped.png" alt="Evil Sans" width="400" height="200" />
+
+        <!-- Improved Latest News Section -->
+        <div class="latest-news">
+            <h2>Latest News</h2>
+            <!-- News Item 1 -->
+            <div class="news-item">
+                <h3>New Expansion Pack Coming Soon!</h3>
+                <p>Get ready for more action with our upcoming expansion pack. Stay tuned for the official release date!</p>
+            </div>
+
+            <!-- News Item 2 -->
+            <div class="news-item">
+                <h3>Big Update Scheduled for Next Month</h3>
+                <p>We're releasing a major update with new features, bug fixes, and improvements. Keep an eye out for more details.</p>
+            </div>
+
+            <!-- News Item 3 -->
+            <div class="news-item">
+                <h3>Upcoming Tournament</h3>
+                <p>Sign up for our next tournament and compete with players worldwide. Prizes await the winners!</p>
+            </div>
+        </div>
 
         <!-- Direct Download Button -->
         <h2>Download Now!</h2>
@@ -110,21 +115,6 @@
             <li>Multiple levels with increasing difficulty.</li>
             <li>Customizable characters and skins.</li>
         </ul>
-
-        <!-- New Latest News Section -->
-        <h2>Latest News</h2>
-        <p>Stay up to date with the latest announcements, updates, and events:</p>
-        <ul>
-            <li>New expansion pack coming soon!</li>
-            <li>Big update scheduled for next month.</li>
-            <li>Join our upcoming tournament!</li>
-        </ul>
-
-        <!-- New Community Section -->
-        <h2>Community</h2>
-        <p>Join our vibrant community to discuss the game, share tips, and make new friends:</p>
-        <a href="https://discord.gg/evilsansblast" target="_blank">Join our Discord</a> |
-        <a href="https://www.reddit.com/r/evilsansblast/" target="_blank">Reddit Community</a>
 
         <!-- Testimonials Section -->
         <div class="testimonials">

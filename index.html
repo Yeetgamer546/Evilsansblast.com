@@ -7,7 +7,7 @@
         body {
             background-color: black;
             color: lime;
-            font-family: Arial, sans-serif; /* Changed to a more widely supported font */
+            font-family: Arial, sans-serif; /* Reliable font for cross-device consistency */
             text-align: center;
             background-image: url('background.jpg'); /* Background image */
             background-repeat: repeat-x; /* Horizontal repetition */
@@ -16,7 +16,7 @@
 
         @keyframes moveBackground {
             from {
-                background-position: 0 0; /* Starting point */
+                background-position: 0 0; /* Starting position */
             }
             to {
                 background-position: 100% 0; /* End point after animation */
@@ -26,17 +26,17 @@
         .marquee {
             color: red;
             font-size: 24px;
-            text-decoration: blink; /* Deprecated in most browsers */
+            text-decoration: blink; /* Blink effect (no longer supported in most browsers) */
             background-color: yellow;
             font-weight: bold;
-            animation: blink 1s infinite; /* Mimics the blink effect */
+            animation: blink 1s infinite; /* Mimics blinking text */
         }
 
         a {
             color: cyan;
             text-decoration: none;
         }
-        
+
         a:hover {
             color: white;
             text-decoration: underline;
@@ -49,7 +49,7 @@
 
         .content {
             padding: 20px;
-            background: rgba(0, 0, 0, 0.8); /* Transparent overlay for readability */
+            background: rgba(0, 0, 0, 0.8); /* Improves readability */
         }
 
         .download-link {
@@ -84,7 +84,7 @@
 <body>
     <div class="header">
         <h1 class="marquee">WELCOME TO EVIL SANS BLAST!</h1>
-        <!-- Navigation -->
+        <!-- Navigation Links -->
         <a href="index.html">Home</a> | 
         <a href="about.html">About Us</a> | 
         <a href="faq.html">FAQ</a>
@@ -110,6 +110,21 @@
             <li>Multiple levels with increasing difficulty.</li>
             <li>Customizable characters and skins.</li>
         </ul>
+
+        <!-- New Latest News Section -->
+        <h2>Latest News</h2>
+        <p>Stay up to date with the latest announcements, updates, and events:</p>
+        <ul>
+            <li>New expansion pack coming soon!</li>
+            <li>Big update scheduled for next month.</li>
+            <li>Join our upcoming tournament!</li>
+        </ul>
+
+        <!-- New Community Section -->
+        <h2>Community</h2>
+        <p>Join our vibrant community to discuss the game, share tips, and make new friends:</p>
+        <a href="https://discord.gg/evilsansblast" target="_blank">Join our Discord</a> |
+        <a href="https://www.reddit.com/r/evilsansblast/" target="_blank">Reddit Community</a>
 
         <!-- Testimonials Section -->
         <div class="testimonials">

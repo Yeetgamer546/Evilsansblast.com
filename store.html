@@ -28,9 +28,10 @@
             background-color: rgba(0, 255, 0, 0.2);
         }
 
-        .item img {
-            max-width: 100%; /* Ensures images don't exceed their container width */
-            height: 200px; /* Set a fixed height for uniformity */
+        .item img,
+        .item video {
+            max-width: 100%; /* Ensures images and videos don't exceed their container width */
+            height: 250px; /* Increased height for larger images and videos */
             object-fit: cover; /* Maintain aspect ratio and cover container */
             border-radius: 5px;
         }

@@ -29,7 +29,9 @@
         }
 
         .item img {
-            max-width: 100%;
+            max-width: 100%; /* Ensures images don't exceed their container width */
+            height: 200px; /* Set a fixed height for uniformity */
+            object-fit: cover; /* Maintain aspect ratio and cover container */
             border-radius: 5px;
         }
 

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fan Art Gallery - Evil Sans Blast</title>
+    <style>
+        body {
+            background-color: black;
+            color: lime;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .header {
+            background-color: blue;
+            padding: 10px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            border: 2px solid lime;
+            border-radius: 10px;
+            margin: 10px;
+            background-color: rgba(0, 255, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .footer {
+            background-color: gray;
+            padding: 10px;
+            color: white;
+        }
+
+        a {
+            color: cyan;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Fan Art Gallery</h1>
+        <a href="index.html">Home</a> | <a href="store.html">Store</a>
+    </div>
+
+    <div class="gallery">
+        <!-- Fan Art 1 -->
+        <div class="gallery-item">
+            <img src="fanart1.jpg" alt="Fan Art 1">
+        </div>
+        <!-- Fan Art 2 -->
+        <div class="gallery-item">
+            <img src="fanart2.jpg" alt="Fan Art 2">
+        </div>
+        <!-- Fan Art 3 -->
+        <div class="gallery-item">
+            <img src="fanart3.jpg" alt="Fan Art 3">
+        </div>
+        <!-- Fan Art 4 -->
+        <div class="gallery-item">
+            <img src="fanart4.jpg" alt="Fan Art 4">
+        </div>
+        <!-- Add more fan art as needed -->
+    </div>
+
+    <div class="footer">
+        <p>© 2003 Evil Sans Blast, Inc. All rights reserved.</p>
+        <p>Website designed by Sans and Bone Olsen</p>
+    </div>
+</body>
+</html>
